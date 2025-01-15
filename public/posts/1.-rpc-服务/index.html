@@ -5,9 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>My New Hugo Site</title>
+<title>RPC服务 | My New Hugo Site</title>
 <meta name="keywords" content="">
-<meta name="description" content="如何调用他人的远程服务？
+<meta name="description" content="share: &#34;true&#34;
+如何调用他人的远程服务？
 　　由于各服务部署在不同机器，服务间的调用免不了网络通信过程，服务消费方每调用一个服务都要写一坨网络通信相关的代码，不仅复杂而且极易出错。
 　　如果有一种方式能让我们像调用本地服务一样调用远程服务，而让调用者对网络通信这些细节透明，那么将大大提高生产力，比如服务消费方在执行helloWorldService.sayHello(&ldquo;test&rdquo;)时，实质上调用的是远端的服务。这种方式其实就是RPC（Remote Procedure Call Protocol），在各大互联网公司中被广泛使用，如阿里巴巴的hsf、dubbo（开源）、Facebook的thrift（开源）、Google grpc（开源）、Twitter的finagle（开源）等。
 　　要让网络通信细节对使用者透明，我们需要对通信细节进行封装，我们先看下一个RPC调用的流程涉及到哪些通信细节：
@@ -147,13 +148,14 @@ public class Test {
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      
+      RPC服务
     </h1>
-    <div class="post-meta">
+    <div class="post-meta"><span title='2024-01-14 07:07:07 +0100 +0100'>January 14, 2024</span>
 
 </div>
   </header> 
-  <div class="post-content"><h3 id="如何调用他人的远程服务">如何调用他人的远程服务？<a hidden class="anchor" aria-hidden="true" href="#如何调用他人的远程服务">#</a></h3>
+  <div class="post-content"><pre tabindex="0"><code>share: &#34;true&#34;
+</code></pre><h3 id="如何调用他人的远程服务">如何调用他人的远程服务？<a hidden class="anchor" aria-hidden="true" href="#如何调用他人的远程服务">#</a></h3>
 <p>　　由于各服务部署在不同机器，服务间的调用免不了网络通信过程，服务消费方每调用一个服务都要写一坨网络通信相关的代码，不仅复杂而且极易出错。</p>
 <p>　　如果有一种方式能让我们像调用本地服务一样调用远程服务，而让调用者对网络通信这些细节透明，那么将大大提高生产力，比如服务消费方在执行helloWorldService.sayHello(&ldquo;test&rdquo;)时，实质上调用的是远端的服务。这种方式其实就是RPC（Remote Procedure Call Protocol），在各大互联网公司中被广泛使用，如阿里巴巴的hsf、dubbo（开源）、Facebook的thrift（开源）、Google grpc（开源）、Twitter的finagle（开源）等。</p>
 <p>　　要让网络通信细节对使用者透明，我们需要对通信细节进行封装，我们先看下一个RPC调用的流程涉及到哪些通信细节：</p>
